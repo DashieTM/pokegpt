@@ -44,6 +44,9 @@
 - Arcanine
 - Ponyta
 - Rapidash
+- Moltres (Flying)
+- Flareon
+- Magmar
 
 ### Grass
 - Bulbasaur Poison
@@ -70,9 +73,6 @@
 - Wigglypuff
 - Meowth
 - Persian
-- Moltres (Flying)
-- Flareon
-- Magmar
 - Snorlax
 - Porygon
 - Eevee
@@ -94,7 +94,7 @@
 - Zubat Flying
 - Golbat Flying
 - Grimer
-- Mulk
+- Muk
 - Arbok
 - Weezing
 - Koffing
