@@ -23,6 +23,16 @@
 - Dewgong
 - Shellder
 - Cloyster Ice
+- Vaporeon
+- Lapras (Ice)
+- Starmie (Pychic)
+- Staryu
+- Seaking
+- Goldeen
+- Seadra
+- Horsea
+- Kingler
+- Krabby
 
 ### Fire
 - Charizard Flying
@@ -45,6 +55,9 @@
 - Bellsprout Poison
 - Wheepinbell Poison
 - Victreebel Poison
+- Tangela
+- Exeggutor (Pychic)
+- Exeggcute (Psychic)
 
 
 ### Normal 
@@ -57,9 +70,17 @@
 - Wigglypuff
 - Meowth
 - Persian
-
-### Ice
-- Arcticuno Flying
+- Moltres (Flying)
+- Flareon
+- Magmar
+- Snorlax
+- Porygon
+- Eevee
+- Ditto
+- Tauros
+- Kangaskhan
+- Chansey
+- Lickitung
 
 ### Poison 
 - Ekans
@@ -74,6 +95,9 @@
 - Golbat Flying
 - Grimer
 - Mulk
+- Arbok
+- Weezing
+- Koffing
 
 ### Ghost
 - Gastly Poison
@@ -81,6 +105,9 @@
 - Gengar Poison
 
 ### Dragon
+- Dratini
+- Dragonair
+- Dragonite (Flying)
 
 ### Bug
 - Caterpie
@@ -93,12 +120,20 @@
 - Parasect Grass
 - Venonat Poison
 - Venomoth Poison
-
+- Beedrill XX
+- Pinsir
+- Scyther (Flying)
 
 ### Psychic
 - Abra
 - Kadabra
 - Alakazam
+- Mew
+- Mewtu
+- Jynx (Ice)
+- Mr. Mime
+- Hypno
+- Drowzee
 
 ### Rock
 - Aerodactyl  Flying
@@ -111,6 +146,11 @@
 - Raichu
 - Magnemite
 - Magneton
+- Zapdos (Flying)
+- Jolteon
+- Electabuzz
+- Electrode
+- Voltorb
 
 ### Flying
 - Pidgey Normal
@@ -121,12 +161,17 @@
 - Farfetch Normal
 - Doduo Normal
 - Dodrio Normal
+- Arcticuno (Ice)
 
 ### Ground
 - Sandshrew
 - Sandslash
 - Diglett
 - Dugtrio
+- Rhydon (Rock)
+- Rhyhorn (Rock)
+- Marowak
+- Cubone
 
 ### Fighting
 - Mankey
@@ -134,4 +179,11 @@
 - Machop
 - Machoke
 - Machamp
+- Kabutops (Water)
+- Kabuto (Water)
+- Omastar (Water)
+- Omanyte (Water)
+- Onix (Boden)
+- Hitmonchan
+- Hitmonlee
 
