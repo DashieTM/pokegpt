@@ -33,6 +33,7 @@
 - Horsea
 - Kingler
 - Krabby
+- Gyarados
 
 ### Fire
 - Charizard Flying
@@ -62,8 +63,7 @@
 - Exeggutor (Pychic)
 - Exeggcute (Psychic)
 
-
-### Normal 
+### Normal
 - Rattata
 - Raticate
 - Chansey
@@ -82,7 +82,7 @@
 - Chansey
 - Lickitung
 
-### Poison 
+### Poison
 - Ekans
 - Arbok
 - Nidoran
@@ -140,6 +140,11 @@
 - Geodude Ground
 - Graveler Ground
 - Golem Ground
+- Kabutops (Water)
+- Kabuto (Water)
+- Omastar (Water)
+- Omanyte (Water)
+- Onix (Boden)
 
 ### Electric
 - Pikachu
@@ -179,11 +184,6 @@
 - Machop
 - Machoke
 - Machamp
-- Kabutops (Water)
-- Kabuto (Water)
-- Omastar (Water)
-- Omanyte (Water)
-- Onix (Boden)
 - Hitmonchan
 - Hitmonlee
 
