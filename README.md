@@ -2,6 +2,7 @@
 
 ## Link to dataset
 [link](https://www.kaggle.com/datasets/thedagger/pokemon-generation-one?resource=download)
+[link](https://www.kaggle.com/datasets/mikoajkolman/pokemon-images-first-generation17000-files)
 
 
 ## Types
