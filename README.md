@@ -98,16 +98,9 @@
 - Arbok
 - Weezing
 - Koffing
-
-### Ghost
-- Gastly Poison
-- Haunter Poison 
-- Gengar Poison
-
-### Dragon
-- Dratini
-- Dragonair
-- Dragonite (Flying)
+- Gastly
+- Haunter
+- Gengar
 
 ### Bug
 - Caterpie
@@ -167,6 +160,7 @@
 - Doduo Normal
 - Dodrio Normal
 - Arcticuno (Ice)
+- Dragonite (Flying)
 
 ### Ground
 - Sandshrew
@@ -177,6 +171,8 @@
 - Rhyhorn (Rock)
 - Marowak
 - Cubone
+
+## not enough
 
 ### Fighting
 - Mankey
