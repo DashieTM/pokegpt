@@ -2,8 +2,7 @@
 import tensorflow as tf
 import tensorflow.keras as keras
 import keras.layers as layers
-from sklearn.model_selection import KFold 
-
+from sklearn.model_selection import KFold
 
 
 # Helper libraries
@@ -28,7 +27,8 @@ training_ds, validation_ds = keras.utils.image_dataset_from_directory(
     labels="inferred",
     color_mode="rgb",
     batch_size=batch_size,
-    image_size=(img_height, img_width), # Some preprocessing happening here, resizing the images
+    # Some preprocessing happening here, resizing the images
+    image_size=(img_height, img_width),
     subset="both",
     seed=24,
     validation_split=0.2
@@ -40,7 +40,8 @@ testing_ds = keras.utils.image_dataset_from_directory(
     labels="inferred",
     color_mode="rgb",
     batch_size=batch_size,
-    image_size=(img_height, img_width) # Some preprocessing happening here, resizing the images
+    # Some preprocessing happening here, resizing the images
+    image_size=(img_height, img_width)
 )
 
 class_names = training_ds.class_names
@@ -65,7 +66,8 @@ o_training_ds = keras.utils.image_dataset_from_directory(
     labels="inferred",
     color_mode="rgb",
     batch_size=batch_size,
-    image_size=(img_height, img_width), # Some preprocessing happening here, resizing the images
+    # Some preprocessing happening here, resizing the images
+    image_size=(img_height, img_width),
 )
 
 train_images = np.concatenate(list(o_training_ds.map(lambda x, y: x)))
@@ -90,7 +92,8 @@ print("kfold setup done")
 print("Starting kfold model evaltuation")
 for train, test in kfold.split(inputs, targets):
     optimized_model = keras.Sequential([
-        layers.Rescaling(1./255), # Some preprocessing happening here, normalizing the data
+        # Some preprocessing happening here, normalizing the data
+        layers.Rescaling(1./255),
         layers.Conv2D(64, 3, activation='relu'),
         layers.MaxPooling2D(),
         layers.Conv2D(128, 3, activation='relu'),
@@ -100,35 +103,36 @@ for train, test in kfold.split(inputs, targets):
         layers.Flatten(),
         layers.Dense(num_classes, activation='softmax')
     ])
-     
+
     print(f"fitting model: {iteration}")
-    
+
     optimized_model.compile(
-        optimizer='adam', 
+        optimizer='adam',
         loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
         metrics=['acc']
     )
-    
+
     optimized_history = optimized_model.fit(
         inputs[train],
         targets[train],
         validation_data=validation_ds,
         epochs=num_epochs
     )
-    
+
     models[iteration] = optimized_model
-    scores[iteration] = optimized_model.evaluate(inputs[test], targets[test], verbose=0)
+    scores[iteration] = optimized_model.evaluate(
+        inputs[test], targets[test], verbose=0)
     iteration += 1
 
 print(scores)
 
-best_model_score = 0 
+best_model_score = 0
 best_model = 0
 iteration = 0
-for selected_model in scores: 
+for selected_model in scores:
     if selected_model[1] > best_model_score:
         best_model_score = selected_model[1]
-        best_model = iteration 
+        best_model = iteration
     iteration += 1
 
 optimized_model = models[best_model]
@@ -138,4 +142,3 @@ optimized_history = optimized_model.fit(
     validation_data=validation_ds,
     epochs=num_epochs
 )
-
